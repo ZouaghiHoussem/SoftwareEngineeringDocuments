@@ -3,25 +3,22 @@ using System.Data;
 
 namespace ClubManager
 {
-
     public partial class Login : System.Web.UI.Page
     {
-
         protected void btnLogin_Click(object sender, EventArgs e)
         {
+            string username = txtUser.Text.Trim();
+            string password = txtPass.Text.Trim();
 
-            string username = txtUser.Text;
-
-            string password = txtPass.Text;
-
-            DataRow user = DbSingleton.Instance.GetUser(username, password);
+            ClubFacade facade = new ClubFacade();
+            DataRow user = facade.LoginUser(username, password);
 
             if (user != null)
             {
-                Session["Username"] = user["Username"].ToString();
-                Session["Role"] = user["Role"].ToString();
-
                 string role = user["Role"].ToString();
+
+                Session["Username"] = user["Username"].ToString();
+                Session["Role"] = role;
 
                 if (role == "Admin")
                 {
@@ -31,14 +28,15 @@ namespace ClubManager
                 {
                     Response.Redirect("DashboardEntraineur.aspx");
                 }
+                else
+                {
+                    lblError.Text = "Role non reconnu";
+                }
             }
             else
             {
                 lblError.Text = "Login incorrect";
             }
-
         }
-
     }
-
 }

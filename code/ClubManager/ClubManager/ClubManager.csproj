@@ -73,15 +73,23 @@
     </Content>
     <Content Include="Assets\stadium.png" />
     <Content Include="Assets\club.png" />
-    <Content Include="Assets\login.css" />
-    <Content Include="Assets\login.js" />
+    <Content Include="Assets\main.css" />
+    <Content Include="Assets\main.js" />
     <Content Include="DashboardAdmin.aspx" />
     <Content Include="DashboardEntraineur.aspx" />
+    <Content Include="GestionEntrainements.aspx" />
+    <Content Include="GestionEntraineurs.aspx" />
+    <Content Include="GestionJoueurs.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Code\ClubFacade.cs" />
     <Compile Include="App_Code\DbSingleton.cs" />
+    <Compile Include="Command\AddPlayerCommand.cs" />
+    <Compile Include="Command\DeletePlayerCommand.cs" />
+    <Compile Include="Command\ICommand.cs" />
+    <Compile Include="Command\UpdatePlayerCommand.cs" />
     <Compile Include="DashboardAdmin.aspx.cs">
       <DependentUpon>DashboardAdmin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -96,6 +104,27 @@
     <Compile Include="DashboardEntraineur.aspx.designer.cs">
       <DependentUpon>DashboardEntraineur.aspx</DependentUpon>
     </Compile>
+    <Compile Include="GestionEntrainements.aspx.cs">
+      <DependentUpon>GestionEntrainements.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestionEntrainements.aspx.designer.cs">
+      <DependentUpon>GestionEntrainements.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestionEntraineurs.aspx.cs">
+      <DependentUpon>GestionEntraineurs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestionEntraineurs.aspx.designer.cs">
+      <DependentUpon>GestionEntraineurs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestionJoueurs.aspx.cs">
+      <DependentUpon>GestionJoueurs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestionJoueurs.aspx.designer.cs">
+      <DependentUpon>GestionJoueurs.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -103,7 +132,17 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Observer\EntrainementSubject.cs" />
+    <Compile Include="Observer\IObserver.cs" />
+    <Compile Include="Observer\ISubject.cs" />
+    <Compile Include="Observer\Notification.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="State\ActiveState.cs" />
+    <Compile Include="State\InjuredState.cs" />
+    <Compile Include="State\IPlayerState.cs" />
+    <Compile Include="State\PlayerStateFactory.cs" />
+    <Compile Include="State\SuspendedState.cs" />
+    <Compile Include="State\UnavailableState.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
