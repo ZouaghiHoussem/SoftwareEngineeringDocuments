@@ -288,17 +288,7 @@ L’interface est devenue :
 - plus agréable à utiliser,
 - plus professionnelle pour une démonstration.
 ---
-## 9. Organisation du dépôt GitHub
-Le projet a également été organisé dans le dépôt GitHub de façon plus professionnelle.
-Le code a été placé dans :
-- `code/ClubManager/ClubManager`
-La documentation a été placée dans :
-- `documentation`
-Cette organisation permet de :
-- séparer le code de la documentation,
-- rendre le dépôt plus propre,
-- faciliter la lecture pour le professeur.
----
+
 ## 10. Difficultés rencontrées
 Pendant le développement, plusieurs difficultés ont été rencontrées.
 ### Difficultés techniques
@@ -309,11 +299,7 @@ Pendant le développement, plusieurs difficultés ont été rencontrées.
 - placement du projet dans le bon dossier `/code`,
 - gestion correcte des dates pour les entraînements,
 - affichage correct des notifications dans WebForms.
-### Difficultés de conception
-- choisir quels patrons utiliser et où les placer,
-- éviter d’utiliser les patrons de façon forcée,
-- garder un projet simple tout en intégrant plusieurs patrons.
-Ces difficultés ont été résolues progressivement, ce qui a permis d’améliorer la structure du projet.
+
 ---
 ## 11. Résultat final
 À la fin de ce travail, nous avons obtenu une application qui permet :
@@ -328,27 +314,8 @@ Le projet répond donc à la fois :
 - aux besoins fonctionnels du sujet,
 - et aux objectifs pédagogiques liés aux patrons de conception.
 ---
-## 12. Conclusion
-Le projet **FCB ClubManager** nous a permis de mettre en pratique plusieurs notions importantes vues dans le cours, à la fois sur le plan technique et architectural.
-Nous avons pu :
-- développer une application web fonctionnelle,
-- structurer le code avec plusieurs patrons de conception,
-- relier l’interface, la logique métier et la base de données,
-- améliorer l’apparence de l’application,
-- mieux comprendre l’intérêt réel des patrons dans un projet concret.
-Ce projet nous a aussi aidés à travailler la logique de développement progressive, la résolution de problèmes et l’organisation d’un dépôt GitHub de manière plus professionnelle.
----
-## 13. Améliorations possibles
-Même si le projet est déjà fonctionnel, plusieurs améliorations peuvent encore être ajoutées dans le futur :
-- enrichir davantage le dashboard entraîneur,
-- ajouter une vraie affectation joueurs ↔ entraîneurs,
-- ajouter une affectation joueurs ↔ entraînements,
-- améliorer les notifications,
-- ajouter d’autres patrons comme Factory, Adapter ou Decorator,
-- améliorer encore la sécurité des mots de passe,
-- nettoyer certains fichiers inutiles du dépôt.
----
-## 14. Répartition générale des éléments réalisés
+
+## 12. Répartition générale des éléments réalisés
 ### Partie interface
 - Login
 - dashboards
