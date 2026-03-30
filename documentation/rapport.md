@@ -289,7 +289,7 @@ L’interface est devenue :
 - plus professionnelle pour une démonstration.
 ---
 
-## 10. Difficultés rencontrées
+## 9. Difficultés rencontrées
 Pendant le développement, plusieurs difficultés ont été rencontrées.
 ### Difficultés techniques
 - configuration de la connexion à la base de données,
@@ -301,7 +301,7 @@ Pendant le développement, plusieurs difficultés ont été rencontrées.
 - affichage correct des notifications dans WebForms.
 
 ---
-## 11. Résultat final
+## 10. Résultat final
 À la fin de ce travail, nous avons obtenu une application qui permet :
 - l’authentification des utilisateurs,
 - la gestion des joueurs,
@@ -315,7 +315,7 @@ Le projet répond donc à la fois :
 - et aux objectifs pédagogiques liés aux patrons de conception.
 ---
 
-## 12. Répartition générale des éléments réalisés
+## 11. Répartition générale des éléments réalisés
 ### Partie interface
 - Login
 - dashboards
