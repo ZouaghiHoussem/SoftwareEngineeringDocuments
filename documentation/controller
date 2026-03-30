@@ -1,0 +1,21 @@
+<?php
+require_once("../models/User.php");
+require_once("../models/Demande.php");
+
+class DemandeController {
+
+    public function submit() {
+        $name = $_POST['name'];
+        $age = $_POST['age'];
+        $email = $_POST['email'];
+
+        $video = $_FILES['video']['name'];
+        move_uploaded_file($_FILES['video']['tmp_name'], "../uploads/" . $video);
+
+        $user_id = User::create($name, $age, $email);
+        Demande::create($user_id, $video);
+
+        echo "Demande envoyée!";
+    }
+}
+?>
