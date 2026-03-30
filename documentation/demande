@@ -1,0 +1,31 @@
+<?php
+require_once("../config/database.php");
+
+class Demande {
+    public static function create($user_id, $video) {
+        $db = Database::getInstance()->getConnection();
+
+        $stmt = $db->prepare("INSERT INTO demandes (user_id, statut) VALUES (?, 'pending')");
+        $stmt->bind_param("i", $user_id);
+        $stmt->execute();
+        $demande_id = $db->insert_id;
+
+        $stmt2 = $db->prepare("INSERT INTO videos (demande_id, url) VALUES (?, ?)");
+        $stmt2->bind_param("is", $demande_id, $video);
+        $stmt2->execute();
+    }
+
+    public static function getAll() {
+        $db = Database::getInstance()->getConnection();
+        $result = $db->query("SELECT * FROM demandes");
+        return $result;
+    }
+
+    public static function updateStatus($id, $status) {
+        $db = Database::getInstance()->getConnection();
+        $stmt = $db->prepare("UPDATE demandes SET statut=? WHERE id=?");
+        $stmt->bind_param("si", $status, $id);
+        $stmt->execute();
+    }
+}
+?>
