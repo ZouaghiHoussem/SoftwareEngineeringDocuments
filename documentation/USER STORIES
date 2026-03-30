@@ -1,0 +1,6 @@
+En tant que joueur, je veux remplir un formulaire afin de postuler à l’académie
+En tant que joueur, je veux envoyer une vidéo afin de montrer mon niveau
+En tant que joueur, je veux voir le statut de ma demande afin de savoir si je suis accepté
+En tant que coach, je veux voir toutes les candidatures afin de les analyser
+En tant que coach, je veux accepter une demande afin de sélectionner un joueur
+En tant que coach, je veux refuser une demande afin de filtrer les candidats
