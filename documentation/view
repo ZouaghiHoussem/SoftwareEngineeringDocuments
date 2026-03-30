@@ -1,0 +1,15 @@
+<?php
+require_once("../models/Demande.php");
+$demandes = Demande::getAll();
+?>
+
+<h2>Demandes</h2>
+
+<?php while($row = $demandes->fetch_assoc()): ?>
+    <p>
+        ID: <?= $row['id'] ?> | Status: <?= $row['statut'] ?>
+
+        <a href="../index.php?action=accept&id=<?= $row['id'] ?>">Accept</a>
+        <a href="../index.php?action=refuse&id=<?= $row['id'] ?>">Refuse</a>
+    </p>
+<?php endwhile; ?>
