@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Web.UI.WebControls;
-using ClubManager.Command;
-using ClubManager.State;
+
 namespace ClubManager
 {
     public partial class GestionJoueurs : System.Web.UI.Page
@@ -52,8 +51,8 @@ namespace ClubManager
             string nom = txtNom.Text.Trim();
             string prenom = txtPrenom.Text.Trim();
             string poste = txtPoste.Text.Trim();
-            IPlayerState state = PlayerStateFactory.GetState(ddlEtat.SelectedValue);
-            string etat = state.GetEtat();
+            string etat = ddlEtat.SelectedValue;
+
             int age;
             int numero;
 
@@ -78,8 +77,7 @@ namespace ClubManager
                 return;
             }
 
-            ICommand cmd = new AddPlayerCommand(facade, nom, prenom, age, poste, numero, etat);
-            cmd.Execute();
+            facade.AddPlayer(nom, prenom, age, poste, numero, etat);
 
             lblMessage.ForeColor = System.Drawing.Color.Green;
             lblMessage.Text = "Joueur ajoute avec succes.";
@@ -124,8 +122,9 @@ namespace ClubManager
             string nom = txtNom.Text.Trim();
             string prenom = txtPrenom.Text.Trim();
             string poste = txtPoste.Text.Trim();
-            IPlayerState state = PlayerStateFactory.GetState(ddlEtat.SelectedValue);
-            string etat = state.GetEtat(); int age;
+            string etat = ddlEtat.SelectedValue;
+
+            int age;
             int numero;
 
             if (nom == "" || prenom == "" || poste == "")
@@ -149,8 +148,7 @@ namespace ClubManager
                 return;
             }
 
-            ICommand cmd = new UpdatePlayerCommand(facade, id, nom, prenom, age, poste, numero, etat);
-            cmd.Execute();
+            facade.UpdatePlayer(id, nom, prenom, age, poste, numero, etat);
 
             lblMessage.ForeColor = System.Drawing.Color.Green;
             lblMessage.Text = "Joueur modifie avec succes.";
@@ -168,8 +166,7 @@ namespace ClubManager
         {
             int id = Convert.ToInt32(gvJoueurs.DataKeys[e.RowIndex].Value);
 
-            ICommand cmd = new DeletePlayerCommand(facade, id);
-            cmd.Execute();
+            facade.DeletePlayer(id);
 
             lblMessage.ForeColor = System.Drawing.Color.Green;
             lblMessage.Text = "Joueur supprime avec succes.";
@@ -184,5 +181,31 @@ namespace ClubManager
             Session.Abandon();
             Response.Redirect("Login.aspx");
         }
+        protected void btnSearch_Click(object sender, EventArgs e)
+        {
+            string keyword = txtSearch.Text.Trim();
+
+            if (keyword == "")
+            {
+                lblMessage.ForeColor = System.Drawing.Color.Red;
+                lblMessage.Text = "Veuillez entrer un nom ou un prénom.";
+                return;
+            }
+
+            gvJoueurs.DataSource = facade.SearchPlayersByName(keyword);
+            gvJoueurs.DataBind();
+
+            lblMessage.ForeColor = System.Drawing.Color.Blue;
+            lblMessage.Text = "Résultat de recherche pour : " + keyword;
+        }
+        protected void btnResetSearch_Click(object sender, EventArgs e)
+        {
+            txtSearch.Text = "";
+            ChargerJoueurs();
+
+            lblMessage.ForeColor = System.Drawing.Color.Green;
+            lblMessage.Text = "Liste complète des joueurs affichée.";
+        }
     }
+
 }

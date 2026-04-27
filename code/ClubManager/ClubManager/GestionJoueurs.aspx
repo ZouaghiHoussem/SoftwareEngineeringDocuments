@@ -63,9 +63,8 @@
                                 <label>État</label>
                                 <asp:DropDownList ID="ddlEtat" runat="server" CssClass="formControl">
                                     <asp:ListItem Text="Actif" Value="Actif"></asp:ListItem>
-                                    <asp:ListItem Text="Blesse" Value="Blesse"></asp:ListItem>
-                                    <asp:ListItem Text="Suspendu" Value="Suspendu"></asp:ListItem>
-                                    <asp:ListItem Text="Indisponible" Value="Indisponible"></asp:ListItem>
+                                    <asp:ListItem Text="Blessé" Value="Blessé"></asp:ListItem>
+                                   
                                 </asp:DropDownList>
                             </div>
                         </div>
@@ -80,6 +79,17 @@
                     </div>
 
                     <div class="sectionBox">
+                        <div class="formGrid">
+    <div class="formGroup">
+        <label>Rechercher un joueur</label>
+        <asp:TextBox ID="txtSearch" runat="server" CssClass="formControl" placeholder="Nom ou prénom"></asp:TextBox>
+    </div>
+</div>
+
+<div class="actionRow">
+    <asp:Button ID="btnSearch" runat="server" Text="Rechercher" OnClick="btnSearch_Click" CssClass="btn" />
+    <asp:Button ID="btnResetSearch" runat="server" Text="Afficher tous" OnClick="btnResetSearch_Click" CssClass="btn btnSecondary" />
+</div>
                         <h2 class="sectionTitle">Liste des joueurs</h2>
 
                         <div class="gridWrapper">

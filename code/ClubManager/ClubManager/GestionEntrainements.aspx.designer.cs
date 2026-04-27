@@ -69,13 +69,22 @@ namespace ClubManager
         protected global::System.Web.UI.WebControls.TextBox txtType;
 
         /// <summary>
-        /// Contrôle ddlCoach.
+        /// Contrôle lblCoachResponsable.
         /// </summary>
         /// <remarks>
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlCoach;
+        protected global::System.Web.UI.WebControls.Label lblCoachResponsable;
+
+        /// <summary>
+        /// Contrôle cblJoueurs.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBoxList cblJoueurs;
 
         /// <summary>
         /// Contrôle btnAjouter.

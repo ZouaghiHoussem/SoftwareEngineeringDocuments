@@ -447,3 +447,8 @@ hr {
     justify-content: space-between;
     margin-bottom: 20px;
 }
+.bigNumber {
+    font-size: 32px;
+    font-weight: bold;
+    color: #00BFFF;
+}

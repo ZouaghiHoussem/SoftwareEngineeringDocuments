@@ -53,6 +53,16 @@
                                 <label>Expérience</label>
                                 <asp:TextBox ID="txtExperience" runat="server" CssClass="formControl"></asp:TextBox>
                             </div>
+
+                            <div class="formGroup">
+                                <label>Nom d'utilisateur</label>
+                                <asp:TextBox ID="txtUsername" runat="server" CssClass="formControl"></asp:TextBox>
+                            </div>
+
+                            <div class="formGroup">
+                                <label>Mot de passe</label>
+                                <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" CssClass="formControl"></asp:TextBox>
+                            </div>
                         </div>
 
                         <div class="actionRow">

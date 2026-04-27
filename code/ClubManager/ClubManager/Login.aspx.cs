@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data;
+using ClubManager.Factory;
 
 namespace ClubManager
 {
@@ -20,13 +21,11 @@ namespace ClubManager
                 Session["Username"] = user["Username"].ToString();
                 Session["Role"] = role;
 
-                if (role == "Admin")
+                string destination = UserRoleFactory.GetDashboardPage(role);
+
+                if (destination != "")
                 {
-                    Response.Redirect("DashboardAdmin.aspx");
-                }
-                else if (role == "Entraineur")
-                {
-                    Response.Redirect("DashboardEntraineur.aspx");
+                    Response.Redirect(destination);
                 }
                 else
                 {

@@ -13,10 +13,8 @@
 
             <div class="sidebar">
                 <h2>ClubManager</h2>
-                <a href="DashboardAdmin.aspx">Dashboard</a>
-                <a href="GestionJoueurs.aspx">Joueurs</a>
-                <a href="GestionEntraineurs.aspx">Entraineurs</a>
-                <a href="GestionEntrainements.aspx" class="active">Entrainements</a>
+                <a href="DashboardEntraineur.aspx">Dashboard</a>
+                <a href="GestionEntrainements.aspx" class="active">Entraînements</a>
             </div>
 
             <div class="content">
@@ -24,7 +22,7 @@
                     <div class="topBar">
                         <div>
                             <h1 class="pageTitle">Gestion des Entraînements</h1>
-                            <p class="welcomeText">Admin connecté : <asp:Label ID="lblUser" runat="server"></asp:Label></p>
+                            <p class="welcomeText">Entraîneur connecté : <asp:Label ID="lblUser" runat="server"></asp:Label></p>
                         </div>
                     </div>
 
@@ -53,9 +51,14 @@
                             </div>
 
                             <div class="formGroup">
-                                <label>Coach</label>
-                                <asp:DropDownList ID="ddlCoach" runat="server" CssClass="formControl"></asp:DropDownList>
-                            </div>
+    <label>Coach responsable</label>
+    <asp:Label ID="lblCoachResponsable" runat="server" CssClass="formControl"></asp:Label>
+</div>
+                        </div>
+
+                        <div class="sectionBox">
+                            <h2 class="sectionTitle">Joueurs participants</h2>
+                            <asp:CheckBoxList ID="cblJoueurs" runat="server" CssClass="checkboxList"></asp:CheckBoxList>
                         </div>
 
                         <div class="actionRow">
@@ -79,7 +82,7 @@
                         </div>
 
                         <div class="footerActions">
-                            <asp:Button ID="btnRetour" runat="server" Text="Retour Dashboard" PostBackUrl="~/DashboardAdmin.aspx" CssClass="btn btnSecondary" />
+                            <asp:Button ID="btnRetour" runat="server" Text="Retour Dashboard" PostBackUrl="~/DashboardEntraineur.aspx" CssClass="btn btnSecondary" />
                         </div>
                     </div>
                 </div>
