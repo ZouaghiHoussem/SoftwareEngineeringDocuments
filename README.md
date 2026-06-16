@@ -41,9 +41,8 @@ Together, they provide a clear, professional, and maintainable documentation fra
 
 
 ## Documentation Tree
-- [SRS.md](SRS.md)
-- [ADR.md](ADR.md)
-
+- [SRS.md](https://github.com/diowte/SoftwareEngineeringDocuments/blob/main/documentation/SRS.md)
+- [ADR.md](https://github.com/diowte/SoftwareEngineeringDocuments/blob/main/documentation/ADR.md)
 ## Students tasks
 - [ ] Complete the `student_readmefile.md` file.
 - [ ] Use the template file `SRS.md` to create your own SRS.

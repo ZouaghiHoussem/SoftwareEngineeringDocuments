@@ -1,0 +1,124 @@
+<mxfile host="Electron" modified="2026-04-26T17:22:52.368Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.5.3 Chrome/124.0.6367.207 Electron/30.0.6 Safari/537.36" etag="vfug6IXz7Uy1-rw7f4lx" version="24.5.3" type="device">
+  <diagram name="Page-1" id="kNmFlmog0UQmsbdG0ZlF">
+    <mxGraphModel dx="1050" dy="621" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ALGVUA-mYGLBAym3Sa4A-1" value="gestionnaire du club" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+          <mxGeometry x="70" y="30" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ALGVUA-mYGLBAym3Sa4A-2" value="Entraineur" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+          <mxGeometry x="70" y="525" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ALGVUA-mYGLBAym3Sa4A-3" value="Gerer les entraineurs" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="580" y="90" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ALGVUA-mYGLBAym3Sa4A-4" value="" style="edgeStyle=none;html=1;endArrow=block;endFill=0;endSize=12;verticalAlign=bottom;rounded=0;entryX=0.249;entryY=0.048;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.833;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="ALGVUA-mYGLBAym3Sa4A-1" target="ALGVUA-mYGLBAym3Sa4A-7" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="140" y="230" as="sourcePoint" />
+            <mxPoint x="160" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ALGVUA-mYGLBAym3Sa4A-5" value="Gérer les informations du club" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="470" y="20" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ALGVUA-mYGLBAym3Sa4A-6" value="Gerer les joueurs" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="670" y="190" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ALGVUA-mYGLBAym3Sa4A-7" value="S’authentifier" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="110" y="270" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ALGVUA-mYGLBAym3Sa4A-9" value="" style="edgeStyle=none;html=1;endArrow=block;endFill=0;endSize=12;verticalAlign=bottom;rounded=0;entryX=0.017;entryY=0.312;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="ALGVUA-mYGLBAym3Sa4A-6" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="100" y="70" as="sourcePoint" />
+            <mxPoint x="235" y="292" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ALGVUA-mYGLBAym3Sa4A-10" value="" style="edgeStyle=none;html=1;endArrow=block;endFill=0;endSize=12;verticalAlign=bottom;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="ALGVUA-mYGLBAym3Sa4A-3" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="100" y="60" as="sourcePoint" />
+            <mxPoint x="225" y="292" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ALGVUA-mYGLBAym3Sa4A-11" value="" style="edgeStyle=none;html=1;endArrow=block;endFill=0;endSize=12;verticalAlign=bottom;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="ALGVUA-mYGLBAym3Sa4A-1" target="ALGVUA-mYGLBAym3Sa4A-5" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="130" y="220" as="sourcePoint" />
+            <mxPoint x="225" y="292" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ALGVUA-mYGLBAym3Sa4A-12" value="" style="edgeStyle=none;html=1;endArrow=block;endFill=0;endSize=12;verticalAlign=bottom;rounded=0;entryX=0.071;entryY=0.752;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="ALGVUA-mYGLBAym3Sa4A-2" target="ALGVUA-mYGLBAym3Sa4A-7" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="125" y="480" as="sourcePoint" />
+            <mxPoint x="240" y="572" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ALGVUA-mYGLBAym3Sa4A-13" value="Consulter la liste des joueurs" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="170" y="420" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ALGVUA-mYGLBAym3Sa4A-14" value="" style="edgeStyle=none;html=1;endArrow=block;endFill=0;endSize=12;verticalAlign=bottom;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="ALGVUA-mYGLBAym3Sa4A-2" target="ALGVUA-mYGLBAym3Sa4A-13" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="135" y="490" as="sourcePoint" />
+            <mxPoint x="233" y="368" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Epuv-IWTZpvU3bq-i-gh-11" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;exitX=0.057;exitY=0.776;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="ALGVUA-mYGLBAym3Sa4A-3" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="200" y="10" as="sourcePoint" />
+            <mxPoint x="200" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Epuv-IWTZpvU3bq-i-gh-12" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;entryX=0.766;entryY=-0.008;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.231;exitY=1.008;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="ALGVUA-mYGLBAym3Sa4A-6" target="ALGVUA-mYGLBAym3Sa4A-7" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="192.83999999999992" y="270" as="sourcePoint" />
+            <mxPoint x="560" y="204.20000000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Epuv-IWTZpvU3bq-i-gh-16" value="Consulter la fiche du joueur" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="380" y="460" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Epuv-IWTZpvU3bq-i-gh-17" value="" style="edgeStyle=none;html=1;endArrow=block;endFill=0;endSize=12;verticalAlign=bottom;rounded=0;entryX=-0.011;entryY=0.828;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="Epuv-IWTZpvU3bq-i-gh-16" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="92" y="525" as="sourcePoint" />
+            <mxPoint x="220" y="525" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Epuv-IWTZpvU3bq-i-gh-21" value="" style="edgeStyle=none;html=1;endArrow=block;endFill=0;endSize=12;verticalAlign=bottom;rounded=0;entryX=0.06;entryY=0.23;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="Epuv-IWTZpvU3bq-i-gh-14" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="92" y="554.5" as="sourcePoint" />
+            <mxPoint x="220" y="554.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Epuv-IWTZpvU3bq-i-gh-14" value="Rechercher joueur" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="274" y="560" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="SgLljNbddEYVY5MVXcQB-1" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="ALGVUA-mYGLBAym3Sa4A-7" edge="1" source="ALGVUA-mYGLBAym3Sa4A-5">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="370" y="50" as="sourcePoint" />
+            <mxPoint x="130" y="226" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SgLljNbddEYVY5MVXcQB-5" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.437;exitY=-0.064;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="ALGVUA-mYGLBAym3Sa4A-13" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="250" y="307" as="sourcePoint" />
+            <mxPoint x="190" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SgLljNbddEYVY5MVXcQB-6" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;entryX=0.977;entryY=0.824;entryDx=0;entryDy=0;exitX=0.446;exitY=0.012;exitDx=0;exitDy=0;exitPerimeter=0;entryPerimeter=0;" parent="1" source="Epuv-IWTZpvU3bq-i-gh-16" target="ALGVUA-mYGLBAym3Sa4A-7" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="330" y="307" as="sourcePoint" />
+            <mxPoint x="270" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yfR3dEOGplHrTknnZaPk-1" value="Gerer les entrainements" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="300" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="yfR3dEOGplHrTknnZaPk-2" value="" style="edgeStyle=none;html=1;endArrow=block;endFill=0;endSize=12;verticalAlign=bottom;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="yfR3dEOGplHrTknnZaPk-1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="98" y="80" as="sourcePoint" />
+            <mxPoint x="500" y="186" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
