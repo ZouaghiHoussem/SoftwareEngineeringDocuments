@@ -5,7 +5,7 @@ This repository contains the core documentation used to structure and guide the 
 
 ## Documents Included
 
-### 1. `cahier-des-charges.md` — Software Requirements Specification
+### 1. `SRS.md` — Software Requirements Specification
 This document describes **what the system must do**.  
 It defines:
 - the project scope (included and excluded features),
