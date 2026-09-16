@@ -4,7 +4,7 @@ Ce dépôt contient la documentation principale utilisée pour structurer et gui
 
 ## Documents inclus
 
-### 1. Spécification des exigences logicielles (Software Requirements Specification (SRS))
+### 1. Cahier des charges (Software Requirements Specification (SRS))
 Ce document décrit **ce que le système doit faire**.  
 Il définit :
 - la portée du projet (fonctionnalités incluses et exclues),
