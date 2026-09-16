@@ -1,24 +1,20 @@
 # Nom du projet
 
 ## Présentation générale
-Ce projet consiste à développer **[description très courte du produit]**. 
-Garder la présentation courte et concise.
+Ce projet consiste à développer une application permettant de gérer un seul club de football, en centralisant la gestion des joueurs, des entraîneurs et des entraînements.
 
-L’objectif principal est de **[objectif du produit / problème résolu]**.
-
----
+L’objectif principal est de faciliter l’organisation interne du club, le suivi de l’effectif et la gestion des présences aux entraînements à l’aide d’un outil simple et structure
+--- mm
 
 ## Équipe
-- Prénom Nom - Num Étudiant
-- Prénom Nom - Num Étudiant
-- Prénom Nom - Num Étudiant
-
+ Ahmad Errekab
+Akram Boughlala
 ---
 
 ## Produit cible
 Le produit final est destiné à :
-* Type d’utilisateur : [ex. joueur, client, entreprise]
-* Plateforme cible : [PC, Web, Mobile, VR, etc.]
+* Type d’utilisateur : Gestionnaire / Entraîneur du club / joueur
+* Plateforme cible : [PC, Web]
 ---
 
 ## Structure du dépôt
