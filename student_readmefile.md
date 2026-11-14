@@ -1,7 +1,9 @@
 # Nom du projet
+E Commerce website
+
 
 ## Présentation générale
-Ce projet consiste à développer **[description très courte du produit]**. 
+Ce projet consiste à développer **[une application gratuit permettant de faire des achats d'objets variés en lign]**. 
 Garder la présentation courte et concise.
 
 L’objectif principal est de **[objectif du produit / problème résolu]**.
@@ -9,15 +11,17 @@ L’objectif principal est de **[objectif du produit / problème résolu]**.
 ---
 
 ## Équipe
-- Prénom Nom - Num Étudiant
-- Prénom Nom - Num Étudiant
-- Prénom Nom - Num Étudiant
+- Smarley -202437334
+- Nathanael Zoungarani Tshimanga - 202520865
+- Neeraj Mothoor - 202522589
+- Reda -
+- Hassan-24134272
 
 ---
 
 ## Produit cible
 Le produit final est destiné à :
-* Type d’utilisateur : [ex. joueur, client, entreprise]
+* Type d’utilisateur : [acheteur,vendeur,livreur,]
 * Plateforme cible : [PC, Web, Mobile, VR, etc.]
 ---
 
