@@ -1,7 +1,7 @@
 # Cahier des charges (SRS léger) — <Nom du projet>
 **Équipe :** <Smarley, Nathanael, Neeraj, Reda, Hassan>  
 **Date :** <2026 10 10>  
-**Version :** <v0.1 / v1.0>
+**Version :** <v0.1 / v2.0>
 
 ---
 
