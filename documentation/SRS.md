@@ -61,10 +61,11 @@ FR-8 : Une confirmation de commande s'affiche, avec un paiement simulé : aucune
 FR-9 : Le client peut consulter l'historique de ses commandes et leur état.
 FR-10 : Le vendeur peut ajouter, modifier ou retirer ses produits du catalogue.
 FR-11 :L'administrateur peut mettre en garde ou banir un client
-FR-12:L'administrateur peut voir la liste total des ventes 
+FR-12:L'administrateur peut voir la liste total des produit vendu.
 FR13:L'administrateur peut repondre au different signalement de la boutique
 FR14:L'administrateur peut modifier les permissions
-
+FR15: Le client peut signaler un vendeur
+FR16: Le client peur donner son avis sur un produit
 
 ## 5. Exigences non fonctionnelles (NFR)
 > Performance / sécurité / disponibilité / UX / maintenabilité…
@@ -114,7 +115,14 @@ Les commandes et les livraisons servent de données de démonstration : leur ét
 Product Backlog
 
 ## 10. User Stories
--En tant que client, je veux creer un compte, afin de regrouper lensemble de mes achats et produits favoris.
--En tant que client , je peux cherecher un produit, afin de lajouter dans mon panier achat.
--En tant que client , je peux consulter les avis d'un produit, afin d'avoir une idee et des recommandations avant l'achat.
+- [ ]En tant que client, je veux creer un compte, afin de regrouper lensemble de mes achats et produits favoris.
+- [ ]En tant que client , je peux cherecher un produit, afin de lajouter dans mon panier achat.
+- [ ]En tant que client , je peux consulter les avis d'un produit, afin d'avoir une idee et des recommandations avant l'achat.
+- [ ]En tant que vendeur, je peux ajouter un produit à vendre,afin de me faire de l'argent.
+- [ ]En tant que vendeur, je peux ajouter un produit à vendre,afin de faire un place chez moi.
+- [ ]En tant que vendeur, je peux modifier les description de mon produit, afin de faire une mise à jour.
+- [ ] En tant que administrateur, je peux mettre banir un vendeur, afin de le punir pour mauvais comportement
+- [ ] En tant que administrateur, je peux repondre au signalement, afin de verifier les different problemes rencontrés par les utilisateur
+  
+
 
