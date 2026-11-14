@@ -42,9 +42,7 @@ OUT-4 : Refabriquer tout ce que fait Amazon : recommandations poussées, abonnem
 ## 3. Acteurs / profils utilisateurs
 - **Acteur A :** Client : parcourt les produits, les met au panier, passe commande et suit l'état de celle-ci. Pour commander, il lui faut un compte.
 - **Acteur B :** Veudeur:ajoute ou modifie ses produits, et consulte les commandes qui le concernent.
-- 
 - Acteur C, Livreur: retrouve les livraisons qui lui ont été attribuées et met à jour leur avancement.
-
 - Acteur D, Administrateur: a la main sur les utilisateurs, les produits et les commandes.
 
 ---
