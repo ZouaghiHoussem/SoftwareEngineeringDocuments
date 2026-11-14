@@ -107,14 +107,16 @@ Les commandes et les livraisons servent de données de démonstration : leur ét
     
 ---
 
-## 9. Critères d’acceptation globaux (Definition of Done – mini)
+## 9. Product Backlog
+
+## 9.1 Critères d’acceptation globaux (Definition of Done – mini)
 - [ ] Fonctionnalités livrées et testées
 - [ ] Tests unitaires présents
 - [ ] Gestion d’erreurs minimale
 - [ ] Documentation à jour (UML + ADR si requis)
 Product Backlog
 
-## 10. User Stories
+## 9.2 User Stories
 - [ ]En tant que client, je veux creer un compte, afin de regrouper lensemble de mes achats et produits favoris.
 - [ ]En tant que client , je peux cherecher un produit, afin de lajouter dans mon panier achat.
 - [ ]En tant que client , je peux consulter les avis d'un produit, afin d'avoir une idee et des recommandations avant l'achat.
